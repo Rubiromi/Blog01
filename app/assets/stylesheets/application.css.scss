@@ -13,6 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+@import 'bootstrap';
+
 body {
   font-family: 'Helvetica neue';
   background-color: #D0ECF5;
@@ -35,4 +38,8 @@ a:active {
 
 a:hover {
   color: #D48FDB;
+}
+
+span {
+  color: gray;
 }
