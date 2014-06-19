@@ -5,3 +5,8 @@
 <%= link_to 'Edit', edit_post_path(@post.id) %>
 <span>&nbsp;|&nbsp;</span>
 <%= link_to 'Delete', @post, method: :delete %>
+
+<% @post.comments.each do |comment| %>
+  <h3><%= comment.author %></h3>
+  <p><%= comment.message %></p>
+<% end %>
